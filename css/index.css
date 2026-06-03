@@ -7,3 +7,7 @@
 .folder {
   max-width: 70%;
 }
+.tematext_mobil {
+  text-decoration: none;
+  color: var(--color-folder-text);
+}
