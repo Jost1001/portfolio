@@ -38,7 +38,7 @@ h1 {
   position: absolute;
   z-index: -1;
   max-width: 50%;
-  top: -90px;
+  top: -150px;
   place-self: end;
   opacity: 0.3;
 }
