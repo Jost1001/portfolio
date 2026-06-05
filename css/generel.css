@@ -134,6 +134,63 @@ p {
   max-width: 80%;
   place-self: center;
 }
+
+/* Accordion */
+.accordion {
+  /* background-color: var(--color-background); */
+  background-color: var(--green);
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: fit-content;
+  margin-inline: 13px; /* text-align: left; */
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.active .accordion:hover {
+  background-color: var(--darkgreen);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: var(--color-background);
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: "\02795";
+  font-size: 13px;
+  color: var(--darkgreen);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+@media (min-width: 800px) {
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .grid_2-2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .minus {
+    order: -1;
+  }
+}
 /* Body end */
 
 /* Footer */
