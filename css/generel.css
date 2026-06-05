@@ -105,23 +105,34 @@ nav.active .menu {
   padding: 20px;
 }
 .burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 30px;
-  height: 30px;
+  height: 24px;
+  background: none;
+  border: none;
   cursor: pointer;
+  gap: 6px;
 }
 
-.burger .line {
+.line {
   display: block;
   width: 100%;
   height: 3px;
   background-color: var(--orange);
-  transition: 0.2s linear;
-  align-self: center;
+  border-radius: 2px;
+}
+.submenu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
+.projects-toggle.active .submenu {
+  display: flex;
 }
 
-.burger {
-  display: block;
-}
 @media (min-width: 800px) {
   .burger {
     display: none;
