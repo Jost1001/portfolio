@@ -9,38 +9,6 @@ p {
   margin-inline: 20px;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 10px;
-  background-color: var(--orange);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  width: fit-content;
-  margin-left: auto;
-  margin-bottom: 50px;
-  margin-right: 20px;
-}
-.arrow_circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  border: 1px solid var(--lightorange);
-  border-radius: 50%;
-  background-color: var(--lightorange);
-  transition: transform 0.2s ease;
-}
-.btn:hover {
-  background-color: #e7b06c;
-}
-.btn:hover .arrow_circle {
-  transform: translate(2px, -2px);
-}
-
 .end_text {
   margin: 10px;
 }
