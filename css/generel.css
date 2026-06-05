@@ -176,6 +176,9 @@ p {
   color: #000;
   max-width: 65ch;
 }
+button {
+  max-width: 65ch;
+}
 .portrait {
   max-width: 70%;
   place-self: center;
@@ -199,12 +202,12 @@ p {
   margin-top: 10px;
 }
 
-.accordion:hover {
+/* .accordion:hover {
   background-color: var(--darkgreen);
-}
-.accordion.active {
+} */
+/* .accordion.active {
   background-color: var(--darkgreen);
-}
+} */
 
 .panel {
   padding: 0 18px;
@@ -217,7 +220,7 @@ p {
 }
 
 .accordion:after {
-  content: "\02795";
+  content: "læs mere";
   font-size: 13px;
   color: var(--darkgreen);
   float: right;
@@ -225,7 +228,7 @@ p {
 }
 
 .active:after {
-  content: "\2796";
+  content: "læs mindre";
 }
 
 /* Accordion end */
