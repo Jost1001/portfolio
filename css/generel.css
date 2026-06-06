@@ -68,6 +68,9 @@ nav {
 .logo {
   max-width: 80px;
 }
+.logo-desktop {
+  display: none;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -132,9 +135,33 @@ nav.active .menu {
 .projects-toggle.active .submenu {
   display: flex;
 }
+html::before {
+  content: "";
+  inset: 0;
+  position: fixed;
+  background-color: var(--darkgreen);
+  block-size: 5px;
+  /* ^højden på baren */
+  animation: site-progress linear both;
+  animation-timeline: scroll();
+  transform-origin: 0 0;
+  z-index: 1000;
+}
+@keyframes site-progress {
+  from {
+    scale: 0 1;
+  }
+}
 
 @media (min-width: 800px) {
   .burger {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
+    width: 60px;
+  }
+  .logo {
     display: none;
   }
 }
@@ -156,8 +183,12 @@ h4 {
   place-self: center;
   margin-bottom: 10px;
 }
-/* h5 {
-} */
+h5 {
+  font-family: var(--font-family-about);
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+}
 .tema {
   font-family: var(--font-family-primary);
   font-size: 18px;

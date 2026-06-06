@@ -4,10 +4,10 @@ main {
 header {
   z-index: 10;
 }
-.logo-desktop {
+.folder_desk {
   display: none;
 }
-.folder_desk {
+.om_mig {
   display: none;
 }
 h1 {
@@ -64,9 +64,6 @@ p {
 }
 
 @media (min-width: 800px) {
-  .logo {
-    display: none;
-  }
   .folder {
     display: none;
   }
@@ -105,7 +102,28 @@ p {
     max-width: 15%;
     margin-top: 30px;
     margin-bottom: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
   }
+  .portrait:hover {
+    filter: grayscale(0%);
+  }
+  .om_mig {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    background-color: rgba(150, 150, 150, 0.324);
+    padding-inline: 5px;
+    bottom: 50%;
+    right: 43%;
+  }
+  .mini_me {
+    max-width: 70px;
+    position: absolute;
+    right: 39%;
+    bottom: 20px;
+  }
+
   .intro {
     place-self: center;
     max-width: 45ch;

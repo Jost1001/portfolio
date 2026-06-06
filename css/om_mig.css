@@ -1,7 +1,15 @@
 main {
   position: relative;
 }
-
+.portrait_desk {
+  display: none;
+}
+.square {
+  display: none;
+}
+.accent_desk {
+  display: none;
+}
 .accent_pic {
   position: absolute;
   top: 0;
@@ -21,11 +29,15 @@ h1 {
   padding-top: 40px;
   padding-bottom: 20px;
 }
+.om_desk {
+  display: none;
+}
+
 .info_kort {
   position: relative;
   width: fit-content;
   place-self: end;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 .tape {
@@ -51,7 +63,7 @@ h1 {
   width: fit-content;
   place-self: center;
   margin-bottom: 50px;
-  margin-top: 75px;
+  margin-top: 55px;
 }
 .tape2 {
   position: absolute;
@@ -102,4 +114,113 @@ h1 {
 }
 .dots .filled {
   background-color: var(--color-dot-filled);
+}
+
+/* Media */
+
+@media (min-width: 800px) {
+  body {
+    border: 1px solid black;
+  }
+  .om {
+    display: none;
+  }
+  .portrait {
+    display: none;
+  }
+  .accent_pic {
+    display: none;
+  }
+  h2 {
+    font-family: var(--font-family-about);
+    font-size: 140px;
+    margin-left: 50px;
+  }
+  .om_desk {
+    display: block;
+    margin-top: 30px;
+  }
+  .square {
+    display: block;
+    position: absolute;
+    top: 228px;
+    left: 44.3%;
+    max-width: 33%;
+    z-index: 1;
+  }
+  .grid_desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 150px;
+  }
+
+  .accent_desk {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 32%;
+    transform: translateX(-50%) scaleX(-1);
+    width: 60%;
+    max-width: 600px;
+    opacity: 0.8;
+    z-index: -1;
+  }
+  .mini_me {
+    max-width: 110px;
+    position: absolute;
+    right: 8%;
+    bottom: 340px;
+  }
+
+  .portrait_desk {
+    display: block;
+    max-width: 25%;
+    position: absolute;
+    top: 238px;
+    left: 45%;
+    z-index: 2;
+  }
+  .info_kort {
+    margin-top: 510px;
+    margin-right: 150px;
+  }
+
+  /* talebobble */
+  .text2 {
+    position: relative;
+    max-width: 60ch;
+    margin-left: 40px;
+    box-shadow: 3px 4px 9px 0px rgba(163, 163, 163, 0.75);
+    border-radius: 21px;
+    border: 2px solid var(--darkgreen);
+  }
+  /* talebobble hale */
+  .text2::before {
+    content: ""; /*der skal ikke stå noget i elementet*/
+    position: absolute;
+    border-style: solid;
+    border-width: 21px 0 0 25px;
+    border-color: transparent transparent transparent var(--darkgreen);
+    top: 75%;
+    right: -27px;
+    z-index: 0;
+  }
+  /* udhuling af talebobble hale */
+  .intro::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 19px 0 0 23px;
+    border-color: transparent transparent transparent var(--lightgreen);
+    top: 75%;
+    right: -23px;
+    z-index: 1;
+  }
+
+  /* talebobble end */
+
+  .tidligere,
+  .semester {
+    padding-inline: 15px;
+  }
 }
