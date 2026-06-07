@@ -1,0 +1,9 @@
+.panel {
+  margin-bottom: 140px;
+}
+.internt {
+  text-decoration: none;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+  color: black;
+}
