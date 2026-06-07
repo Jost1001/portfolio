@@ -1,0 +1,8 @@
+.tema2_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4px;
+}
+.panel {
+  margin-bottom: 140px;
+}

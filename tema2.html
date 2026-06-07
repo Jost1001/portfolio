@@ -50,20 +50,20 @@
     </header>
 
     <main>
-        <h1>Tema 2</h1>
-        <h2>Grundlæggende Web</h2>
-        <div class="grid_2-2">
-            <p>Tema 2 var vores første "rigtige" tema, da tema 1 var vores introuge. I tema 2 blev vi for første gang
-                stillet til
-                opgave at skulle producere en hjemmeside. Dette hjemmesidesprojekt kom også til at fungere som vores
-                studiestartsprøve.
-                Temaet skulle introducere os for de grundlæggemde principper og mest anvendte værktøjer for en
-                multimediedesigner, og
-                derved elementer og koncepter vi ville komme til at bruge fremover. Her begyndte vi også at være hvordan
-                hjemmesider
-                sættes op i HTML og CSS - det grundlæggende inden for webdesign (i hvert fald kodemæssigt).
-            </p>
-            <div>
+        <h1 class="tema_head">Tema 2</h1>
+        <h2 class="tema_titel">Grundlæggende Web</h2>
+        <p class="tema_intro">Tema 2 var vores første "rigtige" tema, da tema 1 var vores introuge. I tema 2 blev vi
+            for første gang
+            stillet til
+            opgave at skulle producere en hjemmeside. Dette hjemmesidesprojekt kom også til at fungere som vores
+            studiestartsprøve.
+            Temaet skulle introducere os for de grundlæggemde principper og mest anvendte værktøjer for en
+            multimediedesigner, og
+            derved elementer og koncepter vi ville komme til at bruge fremover. Her begyndte vi også at være hvordan
+            hjemmesider
+            sættes op i HTML og CSS - det grundlæggende inden for webdesign (i hvert fald kodemæssigt).
+        </p>
+        <!-- <div>
                 <button class="accordion">Det første lille projekt vi udførte for at introducere os til html kodning,
                     var
                     at vi blev bedt om at lave et lille visitkort omkring os selv. Her skulle vi præsentere os kort med
@@ -76,29 +76,62 @@
                     </a>
 
                 </div>
-            </div>
+            </div> -->
 
-        </div>
 
         <div class="grid_2-2">
             <div>
                 <img class="pic" src="imgs/tema2/wireframes.png" alt="wireframes eksempel">
             </div>
             <div>
-                <button class="accordion">Hvad er wireframes, hierkisk mappestruktur og "mobile first"</button>
+                <button class="accordion"> På billedet kan ses et eksempel på ét af de uddelte <b>wireframes</b> som vi
+                    skulle
+                    følge for udviklingen af mobil version (venstre) og desktop version (højre) af projekt
+                    sitet.</button>
                 <div class="panel">
-                    <p>sådan bliver det brugt og dette lærte jeg</p>
+                    <p>Wireframes er en rigtig god måde at "opsætte" ens site, for at hjælpe med at danne et overblik
+                        over hvilke elementer der skal være hvor. Der findes 2 versioner af wireframes: low-fidelity
+                        <b>(lo-fi)</b> og high-fidelity <b>(hi-fi)</b>.
+                        Lo-fi wireframes refererer til de tidligere stadier i udvikling, og tæller alt som tidlige
+                        udkast, sketches og basis wireframes der blot holder simple figurer og meget lidt tekst (som på
+                        billedet).
+                    </p>
+                    <p>Hi-fi wireframes derimod er udkast til et website der ligger sig meget tæt op af det endelige
+                        resultat. Her kan man ofte de eksempelsbilleder der enten minder om eller vil blive brugt på det
+                        endelige site, man kan se typegrafi eksempler, elementer har fået de rigtige farver (hvor en
+                        lofi holder sig til et sort, hvid, grp farveskema), og så kan en hi-fi wireframe også indeholde
+                        klikbare knapper og animationer. </p>
+                    <p>En lo-fi wireframe fungerer altså derved som et blueprint til siden, hvor en hi-fi fungerer som
+                        en meget akurat simulation af det endelige produkt. Det er denne simulation man især kan få
+                        meget ud af, at teste på brugere med.</p>
                 </div>
             </div>
         </div>
         <div class="grid_2-2-1">
             <div>
-                <img class="pic" src="" alt="">
+                <img class="pic" src="imgs/tema2/min_computer.png" alt="min computer">
             </div>
             <div class="minus">
-                <button class="accordion">Hvad gik projektet ud på?</button>
+                <button class="accordion">Vi fik udleveret stort set alt materiale vi skulle bruge til dette tema. Siden
+                    med titlen "Min computer" var den eneste hvor vi selv skulle tage billeder, tilføje dem og skrive
+                    tekst til. I temaet hvor min primære udfordring at lære at arbejde "mobile-first" og bruge "grids".
+                </button>
                 <div class="panel">
-                    <p>Og hvad blev vi givet af materiale. Hvad gjorde jeg og hvad lærte jeg?</p>
+                    <p><b>Mobile-first</b> er en kodemetode, hvor man designer og koder ens hjemmeside som et mobilsite
+                        først. Dette er en måde at sikre at brugeroplevelsen er i top, da de fleste i dag bruger deres
+                        mobiler til at surfe på nettet. En anden god grund til at gøre det på denne måde er, at man kan
+                        opnå en bedre placering hos søgemaskiner som Google der nemlig bruger Mobile-First indeksering
+                        (dvs. processen hvori data eller information organiseres, registreres og gøres søgbart)</p>
+                    <p><b>Grids</b> er en opsætningsmetode der kan hjælpe én med at placere elementer på ens website.
+                        Dette gøres ved hjælp af rækker og kolonner, som en side kan deles op i. Herunder kan der ses
+                        den samme galleri side, men i mobil (venstre) og desktop (højre).</p>
+                    <div class="tema2_grid">
+                        <img src="imgs/tema2/galleri_mobil.png" alt="mobil grid">
+                        <img src="imgs/tema2/galleri.png" alt="">
+                    </div>
+                    <p>Grids er nemlig i sær også noget kan kan bruge til at opsætte desktop websites så de ser pæne ud.
+                        Hvor en mobils skærm er høj og smal er en computers det omvendte. Derfor er der nogle
+                        opsætninger af design og kode elementer der tager sig bedre ud på forskellige måder.</p>
                 </div>
             </div>
 
@@ -108,14 +141,22 @@
                 <img class="pic" src="imgs/tema2/menu.png" alt="regnbue menu">
             </div>
             <div>
-                <button class="accordion">Da jeg havde valgt mit fine regnbue tema, tænkte jeg at det også skulle gøre
-                    sig gældende i menuen.</button>
+                <button class="accordion">I forbindelse med projektet fik vi frie tøjler i valg af farveskema til siden.
+                    Jeg valgte et lidt forsimplet regnbue tema, da det var spændende at finde ud af at det var muligt
+                    individiuelt at vælge for siderne, hvilke farver de skulle have.
+                </button>
                 <div class="panel">
-                    <p>Så jeg brugte en del tid på at få det til at virke.
-                        Hvad lærte jeg? - det var muligt. Lærte også at jeg ville kunne vælge at farvene forblev efter
-                        at en side blev valgt, men havde ikke lært en mere avanceret måde at kunne kode endnu, så alle
-                        eksempler jeg læste kunne jeg ikke forstå eller følge.
-                    </p>
+                    <p>Da jeg havde valgt mit fine regnbue tema, tænkte jeg at det også skulle gøre
+                        sig gældende i menuen.</p>
+                    <p>Dette brugte jeg en del tid på at få til at virke, men jeg fik en masse ud af det. Jeg lærte
+                        blandt andet at det var muligt at gøre. Jeg lærte også at mine ideer ikke passede til min teori
+                        eller kunnen endnu, men jeg lærte at de var mulige.
+                    <p>Jeg lærte blandt andet, at når jeg blev lidt bedre til kodning, så ville jeg kunne vælge at
+                        farvene forblev efter
+                        at en side blev valgt.Men da jeg som sagt var ny til website kodning, så kunne jeg ikke helt,
+                        hverken forstå eller følge de kode eksempler jeg fandt, men jeg kunne se at jeg havde lært nok
+                        til at kunne se at det snart ville være noget jeg vil kunne finde ud af.</p>
+
                 </div>
             </div>
 

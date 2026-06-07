@@ -206,6 +206,7 @@ p {
   font-family: var(--font-family-p);
   color: #000;
   max-width: 65ch;
+  margin-bottom: 8px;
 }
 button {
   max-width: 65ch;
@@ -219,6 +220,25 @@ button {
   place-self: center;
 }
 
+.tema_intro {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  font-family: var(--font-family-p);
+  margin-right: 8px;
+}
+.tema_head {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 43px;
+  font-family: var(--font-family-h1);
+  color: var(--darkgreen);
+}
+.tema_titel {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
 /* Accordion */
 .accordion {
   background-color: var(--green);
@@ -226,27 +246,19 @@ button {
   cursor: pointer;
   padding: 18px;
   width: fit-content;
-  margin-inline: 13px; /* text-align: left; */
+  margin-inline: 20px; /* text-align: left; */
   border: none;
   outline: none;
   transition: 0.4s;
   margin-top: 10px;
 }
-
-/* .accordion:hover {
-  background-color: var(--darkgreen);
-} */
-/* .accordion.active {
-  background-color: var(--darkgreen);
-} */
-
 .panel {
   padding: 0 18px;
   background-color: var(--color-background);
   max-height: 0;
   overflow: hidden;
-  margin-bottom: 30px;
-
+  margin-bottom: 50px;
+  margin-inline: 10px;
   transition: max-height 0.2s ease-out;
 }
 
@@ -314,6 +326,25 @@ button {
   }
   .minus {
     order: -1;
+  }
+  .tema_intro {
+    margin-left: 80px;
+    margin-bottom: 70px;
+  }
+  .tema_head {
+    margin-left: 70px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .tema_titel {
+    margin-left: 80px;
+    margin-bottom: 5px;
+  }
+  .accordion {
+    margin-top: 100px;
+    margin-inline: 80px; /* text-align: left; */
+  }
+  .minus {
   }
 }
 /* Body end */
