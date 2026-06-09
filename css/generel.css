@@ -334,20 +334,21 @@ button {
   cursor: pointer;
   padding: 18px;
   width: 90%;
+  max-width: 65ch;
   margin-inline: auto;
   border: none;
   outline: none;
   transition: 0.4s;
   margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  text-align: left;
 }
 .panel {
   padding-inline: 18px;
   background-color: #f0faec;
   max-height: 0;
   width: 90%;
+  max-width: 65ch;
   justify-self: center;
   overflow: hidden;
   margin-bottom: 50px;
@@ -358,10 +359,10 @@ button {
 
 .accordion:after {
   content: "læs mere";
+  display: block;
+  text-align: right;
   font-size: 13px;
   color: var(--darkgreen);
-  align-self: flex-end;
-  margin-left: 0;
 }
 
 .accordion.active:after {
