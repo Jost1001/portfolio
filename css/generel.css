@@ -334,7 +334,7 @@ button {
   cursor: pointer;
   padding: 18px;
   width: 90%;
-  margin-inline: 15px;
+  margin-inline: 5px;
   justify-self: center;
   border: none;
   outline: none;
@@ -349,7 +349,7 @@ button {
   justify-self: center;
   overflow: hidden;
   margin-bottom: 50px;
-  margin-inline: 10px;
+  margin-inline: 5px;
   transition: max-height 0.2s ease-out;
   border: 2px solid var(--green);
 }
